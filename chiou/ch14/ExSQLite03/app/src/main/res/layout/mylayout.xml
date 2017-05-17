@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+   	<ImageView android:id="@+id/imgIcon"
+   	    android:layout_width="30dp"	android:layout_height="30dp"
+	   	android:layout_centerVertical="true"
+	    android:src="@mipmap/ic_launcher" />
+    
+   	<TextView android:id="@+id/txtShowId"
+		android:layout_width="90dp"	android:layout_height="40dp"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/imgIcon"
+		android:text="編號：" 
+		android:textColor="#600000"
+		android:textSize="30dp"
+		android:layout_margin="5dp"/> 
+    
+ 	<TextView android:id="@+id/txtId"
+		android:layout_width="40dp"	android:layout_height="40dp"
+		android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/txtShowId"
+		android:text="ID" 
+		android:textSize="30dp" />   
+		
+ 	<TextView android:id="@+id/txtName"
+ 	    android:layout_width="fill_parent"
+ 	    android:layout_height="wrap_content"
+ 	    android:layout_marginLeft="10dp"
+ 	    android:layout_marginTop="5dp"
+ 	    android:layout_toRightOf="@id/txtId"
+ 	    android:text="第一行文字"
+ 	    android:textColor="#00FF00"
+ 	    android:textSize="20dp" />
+				
+	<TextView android:id="@+id/txtPrice"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/txtName"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/txtId"
+	    android:text="第二行文字"
+	    android:textColor="#0000FF" android:textSize="16dp" />
+</RelativeLayout>
